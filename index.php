@@ -22,10 +22,22 @@
 
   <body>
     
-    <div id="map"></div>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj_5EdnjB59acFe5ASNvgOmtDTI905eBE&callback=initMap">
-    </script>
+
+
+    <footer>
+      <div>
+        <div class="date">
+          
+        </div>
+        <div class="form">
+
+        </div>
+        <div id="map"></div>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj_5EdnjB59acFe5ASNvgOmtDTI905eBE&callback=initMap">
+        </script>
+      </div>
+    </footer>
 
     <script src="js/tabSlideOut/jquery.tabSlideOut.js"></script>
     <div id="my-tab">

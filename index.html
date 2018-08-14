@@ -35,35 +35,30 @@
             <label>Name/Nickname 
                 
                 <span>
-<?php
-   if(isset($_SESSION['nameError']) && $_SESSION['nameError'])  echo "Something is missing here.";    
-?>
                 </span>
                 
             </label>
-            <input name="name" placeholder="Your name or nickname" value="<?php if(isset($_SESSION['name'])) { echo $_SESSION['name']; unset($_SESSION['name']); } ?>">
+            <input name="name" placeholder="Your name or nickname" value="">
 
             <label>Email
                 
                 <span>
-<?php
-   if(isset($_SESSION['emailError']) && $_SESSION['emailError'])  echo "Check if your email is correct.";    
-?>
                 </span>
                 
             </label>
-            <input name="email" type="email" placeholder="Necessery to contact you" value="<?php if(isset($_SESSION['email'])) { echo $_SESSION['email']; unset($_SESSION['email']); } ?>">
+            <input name="email" type="email" placeholder="Necessery to contact you" value="">
 
             <label>Description
                 
                 <span>
-<?php
-   if(isset($_SESSION['messageError']) && $_SESSION['messageError'])  echo "You forgot about message.";    
-?>
                 </span>
                 
             </label>
-            <textarea name="message" placeholder="Please provide us here every detail about your desired sleeve. Closing style, color of each part of sleeve (exterior, interior, flap, pocket) and size. Expect reply within 12hours. Thank you, we really appreciate it." ><?php if(isset($_SESSION['message'])) { echo $_SESSION['message']; unset($_SESSION['message']); } ?></textarea>
+            <textarea name="message" 
+              placeholder="Please provide us here every detail about your desired sleeve. Closing style, color 
+              of each part of sleeve (exterior, interior, flap, pocket) and size. Expect reply within 12hours. 
+              Thank you, we really appreciate it." >
+            </textarea>
 
             <input id="submit" name="submit" type="submit" value="Send">
         

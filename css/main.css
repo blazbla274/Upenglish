@@ -21,28 +21,98 @@ nav > div > div {
 }
 
 .logo {
-    background-image: url("img/logo.png");
-    width: 90px;
+    background-image: url("../img/logo.png");
+    width: 360px;
     height: 90px;
-    background-size: cover;
-    background: red;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
 }
 
-.list_box > ul {
-    text-decoration: none;
-    list-style: none; 
-    margin: 0px;   
-    transform: translateY(-145%);
+.logo::after {
+    content: "Szkoła języków obcych";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    font-size: 22px;
+    transform: translateY(-50%);
+    font-family: 'Muli', sans-serif;
 }
 
-.list_box > ul > li {
+.logo::before {
+    content: "";
+    position: absolute;
+    height: 65%;
+    width: 1px;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(97, 93, 93);
+}
+
+.list_box {
+    margin-left: 150px;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	height: 40px;
+	line-height: 235%;
+	font-size: 18px;
     display: inline-block;
-    font-size: 17px;
-    padding: 10px;
-    cursor: pointer;
+    transform: translateY(-80%);
+}
+
+ol > li > a, ol > li > ul > li > a {
+    color: rgb(53, 53, 53);
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 110px;
+	height: 45px;
+}
+
+ol > li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 30px;
+	display: none;
+	padding-top: 5px;
+}
+
+ol > li:hover > ul
+{
+	display: block;
+}
+
+ol > li > ul > li
+{
+    z-index: 100;
+    width: 180px;
+    text-align: left;
+}
+
+/*Slider*/
+.main_slider {
+    width: 100%;
+    height: 500px;
 }
 
 /*Footer*/
+footer > div {
+    border-top: 1px solid rgb(39, 38, 38);
+}
+
 footer > div > div {
     width: 50%;
     height: 330px;

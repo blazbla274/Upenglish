@@ -212,6 +212,31 @@ ol > li > ul > li
     to {transform: translate(-50%,-50%) rotate(360deg);}
 }
 
+/*About us*/
+.about_us {
+    text-align: center;
+}
+
+.introduce {
+    margin-top: 170px;
+    margin-bottom: 80px;
+}
+
+.about_us_text {
+    width: 30%;
+    max-width: 300px;
+    height: 330px;
+    background: red;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about_us > .introduce > img {
+    display: inline-block;
+    vertical-align: top;
+}
+
 /*Footer*/
 footer > div {
     border-top: 1px solid rgb(39, 38, 38);

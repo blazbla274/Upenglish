@@ -4,10 +4,12 @@ var zTranslate = 0;
 var resizing = true;
 $(document).ready(function() {
     sliderResize();
-    setInterval(rotateCarousel, 3000);
+    initCarousel();
+    setInterval(rotateCarousel, 5000);
+
     $(window).resize(function() {
       resizing = true;
-      $('.scene_resizing').css("opacity", "1");
+      $('.scene_resizing').css('opacity', '1');
       sliderResize();
     });
 });
@@ -36,6 +38,15 @@ const rotateCarousel = () => {
     if(resizing) resizing = false;
     else resizeOffDelay(200);
       
+}
+
+async function initCarousel() {
+    let angle = carouselIndex / numberOfCells * -360;
+    let transition = $('.carousel').css('transition');
+    $('.carousel').css('transition', 'all 0s ease');
+    document.querySelector('.carousel').style.transform = 'translateZ(-'+zTranslate+'px) rotateY(' + angle + 'deg)';
+    await sleep (1);
+    $('.carousel').css('transition', transition);
 }
 
 async function resizeOffDelay(x) {

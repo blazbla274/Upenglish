@@ -114,8 +114,7 @@
     border-radius: 4px 4px 0 0;
 }
 
-@media all and (max-width: 522px) {
-    #my-tab{
-        top: 20px !important;
-    }
+#my-tab{
+    z-index: 1000 !important;
 }
+

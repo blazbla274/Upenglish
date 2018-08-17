@@ -445,6 +445,10 @@ h2 {
 }
 
 /*Gallery*/
+.gallery {
+    padding-bottom: 250px;
+}
+
 .gallery > div {
     width: 1000px;
     margin: 0 auto;
@@ -570,7 +574,7 @@ footer > div {
 
 footer > div > div {
     width: 50%;
-    height: 330px;
+    height: 530px;
     float: left;
     min-width: 300px;
 }
@@ -586,8 +590,8 @@ footer > div > div {
 }
 
 form {
-    margin-top: 40px;
-    margin-left: 60px;
+    margin-top: 80px;
+    margin-left: 80px;
 }
 
 .form {
@@ -647,4 +651,55 @@ textarea {
     top: -40%;
     width: 140px;
     display: block;
+}
+
+/*date*/
+.date > div:first-child {
+    margin-top: 60px;
+}
+
+.date > div {
+    width: 65%;
+    min-width: 290px;
+    background-color: red;
+    margin: 20px 10px;
+    float: right;
+}
+
+.date > div > h2 {
+    font-size: 20px;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media all and (max-width: 616px) {
+    .form {
+        border-left: 0px;
+    }
+    footer > div > div { 
+        width: 100%;
+        height: auto;
+        padding: 30px 0px;
+    }
+    .date > div {
+        width: 80%;
+        float: none;
+        margin: 20px auto;
+    }
+    form {
+        margin-top: 40px;
+        margin: 0 auto;
+        width: 70%;
+    }
+    label {
+        width: 70vw;
+        margin: 0px;
+    }
+    input[type="email"], textarea {
+        width: 100%;
+    }
+    #dane_osobowe_check::after {
+        width: 40vw;
+    }
 }

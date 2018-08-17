@@ -535,6 +535,34 @@ h2 {
     }
 }
 
+.img_big_box > .next, .img_big_box > .previous {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    background: white;
+    cursor: pointer;
+}
+
+.img_big_box > .next {
+    right: 15vw;
+}
+
+.img_big_box > .previous {
+    left: 15vw;
+}
+
+.img_big_box > img {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 500ms ease;
+    border: 5px solid rgba(255, 255, 255, 0.908);
+    border-radius: 3px;
+}
+
 /*Footer*/
 footer > div {
     border-top: 1px solid rgb(39, 38, 38);

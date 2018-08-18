@@ -399,8 +399,23 @@ h2 {
     margin-top: 15px;
 }
 
+.circle > div > h3 {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.circle > div:last-child > h3 {
+    font-size: 19px;
+}
+
 .offer > section > div > div > .circle {
     color: rgba(255, 255, 255, 0.326);
+}
+
+.offer > section > div > div > .circle > div > h3 {
+    color: rgba(255, 255, 255, 0.836);
 }
 
 /*How we learging*/
@@ -412,6 +427,13 @@ h2 {
     padding: 50px 0px;
     margin: 0 auto;
     width: 850px;
+    text-align: center;
+}
+
+@media all and (max-width: 850px) {
+    .how_we_learning_box {
+        width: 95%;
+    }
 }
 
 /*Price list*/
@@ -570,6 +592,7 @@ h2 {
 /*Footer*/
 footer > div {
     border-top: 1px solid rgb(39, 38, 38);
+    color: white;
 }
 
 footer > div > div {
@@ -577,6 +600,7 @@ footer > div > div {
     height: 530px;
     float: left;
     min-width: 300px;
+    background: rgba(33, 45, 62, 0.94);
 }
 
 #map {
@@ -661,7 +685,6 @@ textarea {
 .date > div {
     width: 65%;
     min-width: 290px;
-    background-color: red;
     margin: 20px 10px;
     float: right;
 }

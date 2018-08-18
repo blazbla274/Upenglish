@@ -18,6 +18,7 @@ nav > div {
 
 nav > div > div {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     transform: translateY(-50%);
     top: 50%;
@@ -66,8 +67,8 @@ ol {
 	line-height: 235%;
 	font-size: 18px;
     display: inline-block;
-    transform: translateY(-80%);
     background: rgb(248, 246, 246);
+    transform: translateY(15%);
 }
 
 ol > li > a, ol > li > ul > li > a {
@@ -111,7 +112,7 @@ ol > li > ul > li {
     padding: 10px;
     border: 1px solid gray;
     border-top: 0px solid black;
-    transform: translateY(5px);
+    transform: translateY(0px);
 }
 
 ol > li > ul > li:last-child {
@@ -119,6 +120,29 @@ ol > li > ul > li:last-child {
 }
 ol > li > ul > li:hover > a {
     border-bottom: 3px solid rgba(255, 0, 0, 0);
+}
+
+.burger {
+    width: 70px;
+    height: 70px;
+    background: red;
+    display: none;
+}
+.join {
+    display: none;
+    margin: 0px 40px;
+    font-size: 30px;
+}
+@media all and (max-width: 1132px) {
+    .burger {
+        display: inline-block;
+    }
+    .list_box {
+        display: none;
+    }
+    .join {
+        display: inline-block;
+    }
 }
 
 /*Slider*/

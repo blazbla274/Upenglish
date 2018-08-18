@@ -1,7 +1,7 @@
 $(document).ready(function() {
     navSet();
     $(window).scroll(function() {
-        navSet();
+      navSet();
     });
 });
 

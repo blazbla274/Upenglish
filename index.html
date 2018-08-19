@@ -20,6 +20,7 @@
     <script src="js/tabSlideOut/behavior.js"></script> 
     <script src="js/initMap.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/slideing.js"></script>
     <script src="js/nav.js"></script>
   </head>
 
@@ -33,22 +34,22 @@
         <div class="list_box">
           <ol>
 
-            <li><a href="">Poznaj nas</a></li>
-            <li style="width: 160px"><a href="">Oferta</a> 
+            <li><a href="#meet_us_href">Poznaj nas</a></li>
+            <li><a href="#offer_href">Oferta</a> 
               <ul>
 
-                <li><a href="">Kursy językowe</a></li>
-                <li><a href="">Wakacje i warsztaty</a></li>
+                <li><a href="#offer_href">Kursy językowe</a></li>
+                <li><a href="#holiday_href">Wakacje i warsztaty</a></li>
                 
               </ul>
             </li>
-            <li><a href="">Galeria</a></li>
-            <li><a href="">Cennik</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#gallery_href">Galeria</a></li>
+            <li><a href="#price_href">Cennik</a></li>
+            <li><a href="#contact_href">Kontakt</a></li>
 
           </ol>
         </div>
-        <div class="join">Zapisz się!</div>
+        <div class="join"><a href="#join_href">Zapisz się!</a></div>
         <div class="burger"></div>
 
       </div>
@@ -56,7 +57,20 @@
 
     <div class="burger_box_background"></div>
     <div class="menu_burger_box">
-      <div></div>
+      
+      <div class="cross" id="close_menu_burger"></div>
+      <ol>
+
+        <li><a href="#meet_us_href">Poznaj nas</a></li>
+        <li><a href="#offer_href">Oferta</a> </li>
+        <li><a href="#offer_href">Kursy językowe</a></li>
+        <li><a href="#holiday_href">Wakacje i warsztaty</a></li>
+        <li><a href="#gallery_href">Galeria</a></li>
+        <li><a href="#price_href">Cennik</a></li>
+        <li><a href="#contact_href">Kontakt</a></li>
+
+      </ol>
+
     </div>
 
     <article>
@@ -94,8 +108,10 @@
     </article>
 
     <article>
-      <div class="about_us" >
+      <div class="about_us">
         
+        <div class="slide_href" id="meet_us_href"></div>
+
         <section>
           <div class="introduce">
           
@@ -181,8 +197,10 @@
     </article>
 
     <article>
-      <div class="offer" >
+      <div class="offer">
         
+        <div class="slide_href" id="offer_href"></div>
+
         <h2>Oferta</h2>
         <section>
           <div class="offer_shadow">
@@ -272,6 +290,7 @@
             </div>
           </div> 
         </section>
+        <div class="slide_href" id="holiday_href"></div>
         <section>
           <div>
             <div class="bottom_offer">
@@ -381,6 +400,7 @@
     <article>
       <div class="price_list" >
 
+        <div class="slide_href" id="price_href"></div>
         <h2>Cennik</h2>
         <div>
           
@@ -409,6 +429,7 @@
     <article>
       <div class="gallery" >
 
+        <div class="slide_href" id="gallery_href"></div>
         <h2>Galeria</h2>
         <div>
 
@@ -452,6 +473,8 @@
 
     <footer>
       <div>
+
+        <div class="slide_href" id="contact_href"></div>
         <div class="date">
 
           <div class="adres">
@@ -492,6 +515,7 @@
           </div>
 
         </div>
+        <div class="slide_href" id="join_href"></div>
         <div class="form">
 
           <form method="post" action="sendMail.php">
@@ -529,6 +553,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj_5EdnjB59acFe5ASNvgOmtDTI905eBE&callback=initMap">
         </script>
       </div>
+
     </footer>
 
     <script src="js/tabSlideOut/jquery.tabSlideOut.js"></script> 

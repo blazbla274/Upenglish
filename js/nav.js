@@ -7,6 +7,10 @@ $(document).ready(function() {
       $('.menu_burger_box').css({ transform: 'translateX(0%)' });
       $('.burger_box_background').css('display', 'block');
     });
+    $('#close_menu_burger').click(function() {
+      $('.menu_burger_box').css({ transform: 'translateX(100%)' });
+      $('.burger_box_background').css('display', 'none');
+    });
 });
 
 const navSet = () => {
@@ -31,6 +35,7 @@ const navSet = () => {
       $('nav > div').css({ height: '70px' });
       $('.logo').css( { height: '70px' } );
       $('.logo').css('background-position', '20px');
+      $('.main_slider').css('margin-top', '100px');
     } else {
       $('nav > div').css(
         { position: 'relative' },
@@ -40,5 +45,6 @@ const navSet = () => {
       $('nav > div').css({ height: '100px' });
       $('.logo').css({ height: '90px' });
       $('.logo').css('background-position', 'left');
+      $('.main_slider').css('margin-top', '0px');
     }
 }

@@ -3,6 +3,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
       navSet();
     });
+    $('.burger').click(function() {
+      $('.menu_burger_box').css({ transform: 'translateX(0%)' });
+      $('.burger_box_background').css('display', 'block');
+    });
 });
 
 const navSet = () => {
@@ -25,14 +29,16 @@ const navSet = () => {
         { left: '0px' }    
       );  
       $('nav > div').css({ height: '70px' });
-      $('.logo').css({height: '70px'});
-      } else {
+      $('.logo').css( { height: '70px' } );
+      $('.logo').css('background-position', '20px');
+    } else {
       $('nav > div').css(
         { position: 'relative' },
         { top: 'none' },
         { left: 'none' }
       );    
       $('nav > div').css({ height: '100px' });
-      $('.logo').css({height: '90px'});
+      $('.logo').css({ height: '90px' });
+      $('.logo').css('background-position', 'left');
     }
 }

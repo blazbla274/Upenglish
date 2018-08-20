@@ -749,10 +749,17 @@ h2 {
 }
 /*Price list*/
 .price_list {
-    background: rgb(255, 102, 0);
+    background-image: url(../img/price_list_background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px 35%;
 }
 
 .price_list > div {
+    background-color: rgba(255, 102, 0, 0.904);
+}
+
+.price_list > div > div {
     width: 1030px;
     text-align: center; 
     margin: 0 auto;
@@ -761,7 +768,7 @@ h2 {
 }
 
 @media all and (max-width: 1030px) {
-    .price_list > div {
+    .price_list > div > div {
         width: 95%;        
     }
 }
@@ -1031,8 +1038,11 @@ h2 {
 
 /*Footer*/
 footer > div {
-    border-top: 1px solid rgb(39, 38, 38);
+    border-top: 2px solid rgb(39, 38, 38);
     color: white;
+    -webkit-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
+    box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
 }
 
 footer > div > div {
@@ -1040,13 +1050,16 @@ footer > div > div {
     height: 502px;
     float: left;
     min-width: 300px;
-    background: rgba(33, 45, 62, 0.94);
+    background: rgba(36, 47, 62, 0.96);
 }
 
 #map {
     width: 100%;
     height: 400px;
     background-color: grey;
+    -webkit-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
+    box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
 }
 
 #map::after {
@@ -1059,7 +1072,7 @@ form {
 }
 
 .form {
-    border-left: 1px solid rgb(53, 51, 51);
+    border-left: 2px solid rgb(56, 65, 78);
     box-sizing: border-box;
 
 }
@@ -1115,6 +1128,7 @@ textarea {
     top: -40%;
     width: 140px;
     display: block;
+    color: rgba(240, 235, 235, 0.938);
 }
 
 /*date*/

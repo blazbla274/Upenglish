@@ -32,7 +32,7 @@ const navSet = () => {
       );
     } else {
       $('nav > div').css(
-        { opacity: '1' },
+        { opacity: '0.95' },
       );
     }
 

@@ -27,6 +27,7 @@ nav > div {
     -webkit-box-shadow: 0px -1px 88px 1px rgba(0,0,0,0.32);
     -moz-box-shadow: 0px -1px 88px 1px rgba(0,0,0,0.32);
     box-shadow: 0px -1px 88px 1px rgba(0,0,0,0.32);
+    opacity: 0.95;
 }
 
 nav > div > div {
@@ -548,8 +549,10 @@ nav > div > .join {
 h2 {
     font-size: 60px;
     padding-top: 70px;
+    padding-bottom: 20px; 
     text-align: center;
     margin: 0px;
+    text-shadow: 0px 0px 3px rgba(50, 50, 50, 0.38);
 }
 
 .offer > h2 {
@@ -631,6 +634,7 @@ h2 {
 
 .how_we_learning_box {
     padding: 50px 0px;
+    padding-bottom: 100px; 
     margin: 0 auto;
     width: 850px;
     text-align: center;
@@ -643,6 +647,85 @@ h2 {
     }
 }
 
+.quotation {
+    text-align: center;
+    font-size: 22px;
+    border-radius: 1px;
+    border: 14px solid rgb(255, 102, 0);
+    display: inline-block;
+    background: rgba(236, 234, 234, 0.596);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin:  50px 0px;
+}
+
+.quotation::before, .quotation::after {
+    content: "";
+    position: absolute;
+    background: rgb(221, 219, 219);
+    width: 80%;
+    height: 14px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.quotation::before {
+    top: -14px;
+}
+
+.quotation::before {
+    bottom: -14px;
+}
+
+.quotation > span {
+    padding: 50px;
+    display: inline-block;
+}
+
+.quotation > span::before {
+    content: "„ ";
+    font-size: 80px;
+}
+
+.quotation > span::after {
+    content: " ”";
+    font-size: 50px;
+}
+
+.quotation > h4 {
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+.quotation > h4::before, .quotation > h4::after { 
+    content: "";
+    position: relative;
+    margin: 0px 25px;
+    transform: translateY(-500%);
+    width: 20%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.459);
+    display: inline-block;
+}
+@media all and (max-width: 800px) {
+    .quotation {
+        width: 80%;
+    }
+    .quotation > span {
+        width: 90%;
+        padding: 0px;
+    }
+}
+@media all and (max-width: 500px) {
+    .quotation > h4::before, .quotation > h4::after {
+        width: 10%;
+    }
+    .quotation > span::before, .quotation > span::after {
+        display: block;
+    }
+}
 /*Price list*/
 .price_list {
     background: rgb(255, 102, 0);
@@ -652,8 +735,8 @@ h2 {
     width: 1030px;
     text-align: center; 
     margin: 0 auto;
-    padding: 50px 0px; 
-     
+    padding-top: 50px; 
+    padding-bottom: 70px;
 }
 
 @media all and (max-width: 1030px) {

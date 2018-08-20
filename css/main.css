@@ -818,8 +818,8 @@ h2 {
 
 .img_big_box {
     z-index: 10000;
-    width: 100vw !important;
-    height: 100vh;
+    width: 100% !important;
+    height: 100%;
     background: rgba(0, 0, 0, 0.942);
     position: fixed;
     top: 0px;
@@ -877,12 +877,12 @@ h2 {
 
 .img_big_box > .next, .img_big_box > .previous {
     position: absolute;
-    top: 46%;
+    bottom: 46%;
     transform: translateY(-50%);
     width: 70px;
     height: 70px;
-    background: white;
     cursor: pointer;
+    z-index: 2;
 }
 
 .img_big_box > .next {
@@ -893,6 +893,129 @@ h2 {
     left: 15vw;
 }
 
+.img_big_box > .next::after, .img_big_box > .next::before,
+.img_big_box > .previous::after, .img_big_box > .previous::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70%;
+    height: 5px;
+    background: white;
+    border-radius: 3px;
+    top: 50%;
+    left: 50%;
+    transition: 300ms ease;
+}
+
+.img_big_box > .next::after {
+    transform: rotate(45deg) translate(-48%, -48%);
+}
+
+.img_big_box > .next::before {
+    transform: rotate(-45deg) translate(-42%, -30%);
+}
+
+.img_big_box > .previous::after {
+    transform: rotate(45deg) translate(-10%, 478%);
+} 
+
+.img_big_box > .previous::before {
+    transform: rotate(-45deg) translate(-3%, -550%);
+}
+
+/*next prev hover*/
+.img_big_box > .next:hover::after {
+    transform: rotate(55deg) translate(-51%, -48%);
+}
+
+.img_big_box > .next:hover::before {
+    transform: rotate(-55deg) translate(-42%, -30%);
+}
+
+.img_big_box > .previous:hover::after {
+    transform: rotate(55deg) translate(5%, 480%);
+} 
+
+.img_big_box > .previous:hover::before {
+    transform: rotate(-55deg) translate(13%, -550%);
+}
+
+@media all and (max-width: 1850px) {
+    .img_big_box > .next {
+        right: 13vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 13vw;
+    }
+}
+@media all and (max-width: 1900px) {
+    .img_big_box > .next {
+        right: 10vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 10vw;
+    }
+}
+@media all and (max-width: 1660px) {
+    .img_big_box > .next {
+        right: 8vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 8vw;
+    }
+}
+@media all and (max-width: 1585px) {
+    .img_big_box > .next {
+        right: 5vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 5vw;
+    }
+}
+@media all and (max-width: 1490px) {
+    .img_big_box > .next {
+        right: 3vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 3vw;
+    }
+}
+@media all and (max-width: 1417px) {
+    .img_big_box > .next {
+        right: 2vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 2vw;
+    }
+}
+@media all and (max-width: 1387px) {
+    .img_big_box > .next {
+        right: 0.2vw;
+    }
+    
+    .img_big_box > .previous {
+        left: 0.2vw;
+    }
+}
+
+@media all and (max-width: 1387px) {
+    .img_big_box > .next {
+        bottom: 14%;
+        right: 10vw;
+    }
+    
+    .img_big_box > .previous {
+        bottom: 14%;
+        left: 10vw;
+    }
+}
+
 .img_big_box > img {
     position: absolute;
     top: 46%;
@@ -901,6 +1024,9 @@ h2 {
     transition: all 500ms ease;
     border: 5px solid rgba(255, 255, 255, 0.908);
     border-radius: 3px;
+    max-width: 95%;
+    height: auto;
+    z-index: 1;
 }
 
 /*Footer*/

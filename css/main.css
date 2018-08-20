@@ -47,6 +47,14 @@ nav > div > div {
     position: relative;
 }
 
+.logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
 .logo::after {
     content: "Szkoła języków obcych";
     position: absolute;
@@ -55,6 +63,7 @@ nav > div > div {
     font-size: 22px;
     transform: translateY(-50%);
     font-family: 'Muli', sans-serif;
+    z-index: 0;
 }
 
 .logo::before {
@@ -424,8 +433,9 @@ nav > div > .join {
         margin-left: 0px;
         width: 100%;
     }
-    .about_us > .introduce {
-        margin-top: 120px;
+    .about_us > section > .introduce {
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 }
 
@@ -433,8 +443,9 @@ nav > div > .join {
     .about_us_text {
         width: 90%;
     }
-    .about_us > .introduce {
-        margin-top: 80px;
+    .about_us > section > .introduce {
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
     .about_us > .introduce > img {
         width: 300px;
@@ -455,7 +466,13 @@ nav > div > .join {
 
 @media all and (max-width: 900px) {
     .lectors > div {
-        width: 95%;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .lectors {
+        padding-top: 20px;
+        padding-bottom: 50px;
     }
 }
 
@@ -478,8 +495,9 @@ nav > div > .join {
 
 .lector_box > h2 {
     font-size: 28px;
-    bottom: 50px;
+    bottom: 60px;
     left: 20px;
+    padding: 0px;
 }
 
 .lector_box > h3 {
@@ -531,7 +549,9 @@ h2 {
     font-size: 60px;
     padding-top: 70px;
     text-align: center;
+    margin: 0px;
 }
+
 .offer > h2 {
     color: white;
 }
@@ -549,6 +569,9 @@ h2 {
 @media all and (max-width: 850px) {
     .offer > section > div > div {
         width: 90%;
+    }
+    h2 {
+        padding: 30px;
     }
 }
 
@@ -616,6 +639,7 @@ h2 {
 @media all and (max-width: 850px) {
     .how_we_learning_box {
         width: 95%;
+        padding: 20px 0px;
     }
 }
 
@@ -665,6 +689,9 @@ h2 {
     .gallery > div {
         width: 95%;
         padding: 10px 0px;
+    }
+    .gallery {
+        padding-bottom: 150px;
     }
 }
 

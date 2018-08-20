@@ -8,10 +8,20 @@ $(document).ready(function() {
       $('.burger_box_background').css('display', 'block');
     });
     $('#close_menu_burger').click(function() {
-      $('.menu_burger_box').css({ transform: 'translateX(100%)' });
-      $('.burger_box_background').css('display', 'none');
+      closeMenuBar();
+    });
+    $('.burger_box_background').click(function() {
+      closeMenuBar();
+    });
+    $('.menu_burger_box > ol > li > a').click(function() {
+      closeMenuBar();
     });
 });
+
+const closeMenuBar = () => {
+  $('.menu_burger_box').css({ transform: 'translateX(100%)' });
+  $('.burger_box_background').css('display', 'none');
+}
 
 const navSet = () => {
 

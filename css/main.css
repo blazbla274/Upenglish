@@ -119,9 +119,28 @@ nav > div > div {
 .list_box > ol > li {
 	float: left;
 	width: 110px;
-	height: 45px;
+    height: 45px;
+    position: relative;
 }
 
+.list_box > ol > li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    width: 85%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(255, 102, 0);
+    opacity: 0;
+    transition: bottom 300ms ease, opacity 200ms ease;
+}
+
+.list_box > ol > li:hover::after { 
+    bottom: 15%;
+    opacity: 1;
+}
 .list_box > ol > li:hover > a, ol > li > ul > li:hover > a {
     color: rgba(102, 101, 101, 0.897);
 }
@@ -130,14 +149,16 @@ nav > div > div {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	height: 30px;
-	display: none;
+	visibility: hidden;
     padding-top: 5px;
+    opacity: 0;
     transform: translateX(-40px);
+    transition: opacity 300ms ease;
 }
 
 .list_box > ol > li:hover > ul {
-	display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .list_box > ol > li > ul > li {
@@ -890,7 +911,7 @@ footer > div {
 
 footer > div > div {
     width: 50%;
-    height: 530px;
+    height: 502px;
     float: left;
     min-width: 300px;
     background: rgba(33, 45, 62, 0.94);

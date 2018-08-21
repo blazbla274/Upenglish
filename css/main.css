@@ -1243,3 +1243,37 @@ textarea {
         width: 40vw;
     }
 }
+
+/*media handle*/
+.handle {
+    opacity: 0.9;
+    background-color: transparent !important;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 1px solid rgba(32, 32, 32, 0.829);
+    width: 42px;
+    height: 42px;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(0deg) translate(-105%, 0%) !important;
+    transition: all 200ms ease;
+    -webkit-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.3);
+}
+.handle:hover {
+    transform: rotate(15deg) translate(-99%, 0%) !important;
+    opacity: 1;
+}
+
+.media-tab {
+    z-index: 1000 !important;
+}
+
+#my-tab-facebook > .handle {
+    background-image: url('../img/fb_ico.png');
+}
+
+#my-tab-instagram > .handle {
+    background-image: url('../img/insta_ico.png');
+}

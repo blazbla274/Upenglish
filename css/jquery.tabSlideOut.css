@@ -33,10 +33,6 @@
     display: block;
     position: absolute;
     cursor: pointer;
-    color: white;
-    background-color: #4267B2;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
 }
 .ui-slideouttab-handle-image {
     transform: rotate(0);
@@ -114,7 +110,4 @@
     border-radius: 4px 4px 0 0;
 }
 
-#my-tab{
-    z-index: 1000 !important;
-}
 

@@ -1100,7 +1100,7 @@ h2 {
     max-height: 80vh;
     z-index: 1;
 }
-@media all and(max-width: 1200px) {
+@media all and (max-width: 1200px) {
     .img_big_box > img {
         max-width: 95%;
     }   

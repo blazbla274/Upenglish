@@ -776,12 +776,76 @@ h2 {
 .price_list_box {
     width: 300px;
     height: 550px;
-    border-radius: 3px;
+    border-radius: 10px;
     border: 1px solid rgba(224, 221, 221, 0.63);
     display: inline-block;
     vertical-align: top;
     background: rgba(170, 167, 167, 0.671);
     margin: 10px 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
+    box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
+}
+
+.price_list_box > div {
+    border-top: 1px solid rgba(240, 240, 240, 0.842);
+}
+
+.price_list_box > div:first-child {
+    border-top: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgb(41, 98, 166); 
+}
+
+.price_list_box > div:first-child > span {
+    background-color: rgba(59, 117, 189, 0.788); 
+}
+
+.price_list_box > div:last-child {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgb(41, 98, 166); 
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.price_list_box > div:last-child > h2 {
+    padding: 10px 0px;
+}
+
+.price_list_box > div:first-child > h2 {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+.price_list_box > div:last-child > span:last-child {
+    padding-bottom: 15px;
+    padding-top: 0px;
+}
+
+.price_list_box > div > h2 {
+    padding: 20px 0px;
+    font-size: 22px;
+    box-shadow: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #e2e2e2e3;
+}
+
+.price_list_box > div > span {
+    display: block;
+}
+
+.price_list_box > div > span:last-child {
+    display: block;
+    padding: 10px 0px;
+}
+
+.price_list_box > div > .price_description {
+    font-size: 14px;
 }
 
 /*Gallery*/

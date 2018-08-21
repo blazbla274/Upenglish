@@ -4,7 +4,9 @@ $(document).ready(function() {
     $('.img_mini_box').click(function() {
         $('.img_big_box').css({display:'block'});
         let id = $(this).attr('id');
-        actualImg = id[id.length - 1];
+        console.log(id);
+        actualImg = id.substring(3, id.length);
+        console.log(actualImg);
         galleryImgUpdate();
     });
     $('.cross').click(function() {

@@ -879,7 +879,7 @@ h2 {
     margin: 1px;
     display: inline-block;
     cursor: zoom-in;
-    opacity: 0.75;
+    opacity: 0.84;
     transition: all 350ms ease;
 }
 
@@ -1104,6 +1104,9 @@ h2 {
     .img_big_box > img {
         max-width: 95%;
     }   
+}
+img {
+    image-orientation: from-image;
 }
 
 /*Footer*/

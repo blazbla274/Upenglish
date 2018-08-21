@@ -962,6 +962,7 @@ h2 {
 
 .img_big_box > .previous {
     left: 15vw;
+    transform: translate(-20%,-50%);
 }
 
 .img_big_box > .next::after, .img_big_box > .next::before,
@@ -1077,27 +1078,32 @@ h2 {
 
 @media all and (max-width: 1387px) {
     .img_big_box > .next {
-        bottom: 14%;
+        bottom: 4%;
         right: 10vw;
     }
     
     .img_big_box > .previous {
-        bottom: 14%;
+        bottom: 4%;
         left: 10vw;
     }
 }
 
 .img_big_box > img {
     position: absolute;
-    top: 46%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 500ms ease;
     border: 5px solid rgba(255, 255, 255, 0.908);
     border-radius: 3px;
-    max-width: 95%;
-    height: auto;
+    max-width: 1200px;
+    max-height: 80vh;
     z-index: 1;
+}
+@media all and(max-width: 1200px) {
+    .img_big_box > img {
+        max-width: 95%;
+    }   
 }
 
 /*Footer*/

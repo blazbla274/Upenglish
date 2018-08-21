@@ -1,4 +1,5 @@
 var actualImg = 1;
+var imgCount = 20;
 $(document).ready(function() { 
     $('.img_mini_box').click(function() {
         $('.img_big_box').css({display:'block'});
@@ -11,10 +12,14 @@ $(document).ready(function() {
     });
     $('.next').click(function() {
         actualImg++;
+        if(actualImg > imgCount)
+          actualImg = 1;
         galleryImgUpdate();
     });
     $('.previous').click(function() {
         actualImg--;
+        if(actualImg < 1)
+          actualImg = imgCount;
         galleryImgUpdate();
     });
 });

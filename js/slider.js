@@ -5,7 +5,7 @@ var resizing = true;
 $(document).ready(function() {
     sliderResize();
     initCarousel();
-    setInterval(rotateCarousel, 5000);
+    setInterval(rotateCarousel, 7000);
 
     $(window).resize(function() {
       resizing = true;

@@ -32,7 +32,7 @@ const navSet = () => {
       );
     } else {
       $('nav > div').css(
-        { opacity: '0.95' },
+        { opacity: '0.9' },
       );
     }
 
@@ -45,16 +45,14 @@ const navSet = () => {
       $('nav > div').css({ height: '70px' });
       $('.logo').css( { height: '70px' } );
       $('.logo').css('background-position', '20px');
-      $('.main_slider').css('margin-top', '100px');
     } else {
       $('nav > div').css(
-        { position: 'relative' },
+        { position: 'absolute' },
         { top: 'none' },
         { left: 'none' }
       );    
-      $('nav > div').css({ height: '100px' });
+      $('nav > div').css({ height: '110px' });
       $('.logo').css({ height: '90px' });
       $('.logo').css('background-position', 'left');
-      $('.main_slider').css('margin-top', '0px');
     }
 }

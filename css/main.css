@@ -780,12 +780,13 @@ h2 {
     border: 1px solid rgba(224, 221, 221, 0.63);
     display: inline-block;
     vertical-align: top;
-    background: rgba(170, 167, 167, 0.671);
+    background: rgba(141, 138, 138, 0.671);
     margin: 10px 10px;
     position: relative;
     -webkit-box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
     box-shadow: 0px 2px 33px -2px rgba(0,0,0,0.59);
+    cursor: pointer;
 }
 
 .price_list_box > div {
@@ -828,7 +829,7 @@ h2 {
 
 .price_list_box > div > h2 {
     padding: 20px 0px;
-    font-size: 22px;
+    font-size: 27px;
     box-shadow: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -837,15 +838,25 @@ h2 {
 
 .price_list_box > div > span {
     display: block;
+    padding: 7px;
+    color: rgba(214, 210, 210, 0.87);
+}
+
+.price_list_box > div > span > span {
+    color: rgba(6, 233, 6, 0.822);
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
 }
 
 .price_list_box > div > span:last-child {
     display: block;
-    padding: 10px 0px;
+    padding-top: 3px;
+    padding-bottom: 30px;
 }
 
-.price_list_box > div > .price_description {
+.price_list_box > div:first-child > .price_description {
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
 /*Gallery*/

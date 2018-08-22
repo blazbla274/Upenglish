@@ -584,12 +584,12 @@ h2 {
 }
 
 .offer > section > div > div {
-    width: 850px;
+    width: 1000px;
     text-align: center;
     margin: 0 auto;
 }
 
-@media all and (max-width: 850px) {
+@media all and (max-width: 1000px) {
     .offer > section > div > div {
         width: 90%;
     }

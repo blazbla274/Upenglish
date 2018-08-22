@@ -260,6 +260,12 @@ nav > div > .join {
     text-decoration: none;
     color: rgba(245, 112, 23, 0.952);
 }
+@media all and (max-width: 1193px) {
+    .list_box {
+        margin-left: 35px;
+    }
+}
+
 @media all and (max-width: 1132px) {
     .burger {
         display: inline-block;

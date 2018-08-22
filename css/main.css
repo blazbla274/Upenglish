@@ -63,7 +63,7 @@ nav > div > div {
     top: 50%;
     font-size: 22px;
     transform: translateY(-50%);
-    font-family: 'Muli', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     z-index: 0;
 }
 
@@ -75,7 +75,7 @@ nav > div > div {
     left: 110px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgb(97, 93, 93);
+    background: rgba(97, 93, 93, 0.949);
 }
 
 @media all and (max-width: 673px) {
@@ -323,14 +323,26 @@ nav > div > .join {
 }
 
 .main_slider > span {
-    width: 600px;
+    width: 450px;
     background: rgba(255, 102, 0, 0.747);
-    bottom: 100px;
+    bottom: 200px;
     font-size: 22px;
-    padding: 10px 34px;
+    padding: 20px 34px;
     text-align: center;
     color: rgba(248, 245, 245, 0.89);
     font-family: 'Muli', sans-serif;
+}
+
+.main_slider > span > h2 {
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_slider > span > h3 {
+    font-size: 110px;
+    margin: 0px;
+    padding: 0px;
 }
 
 @media all and (max-width: 600px) {
@@ -347,12 +359,12 @@ nav > div > .join {
     background: rgb(20, 153, 234);
     border-radius: 3px;
     bottom: 40px;
-    border: 1px solid rgba(83, 83, 83, 0.719);
+    border: 1px solid rgba(83, 83, 83, 0.619);
     cursor: pointer;
     padding: 10px 40px;
     z-index: 2;
     opacity: 0.95;
-    color: rgb(24, 23, 23);
+    color: rgba(255, 255, 255, 0.688);
     font-family: 'Francois One', sans-serif;
     font-weight: 600;
     transition: 300ms ease;

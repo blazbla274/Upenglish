@@ -68,34 +68,32 @@
 /*Baner*/
 
 #cell_1 {
+    background-image: url("../img/baner/megafon.jpg");
+    background-position: 50% 12%;
+}
+#cell_2 {
+    background-image: url("../img/baner/kids.jpg");
+}
+#cell_3 {
     background-image: url("../img/baner/exam.jpg");
     background-position: 50% 35%;
 }
-#cell_2 {
-    background-image: url("../img/baner/business.jpg");
-    background-position: 50% 30%;
-}
-#cell_3 {
-    background-image: url("../img/baner/groupconversation.jpg");
-    background-position: 50% 40%;
-}
 #cell_4 {
-    background-image: url("../img/baner/happykids.jpg");
+    background-image: url("../img/baner/business.jpg");
+    background-position: 50% 30%; 
 }
 #cell_5 {
-    background-image: url("../img/baner/kids.jpg");
+    background-image: url("../img/baner/happykids.jpg");
 }
 #cell_6 {
-    background-image: url("../img/baner/speaking.jpg");
-    background-position: 50% 55%;
+
 }
 #cell_7 {
-    background-image: url("../img/baner/groupconversation.jpg");
-    background-position: 50% 40%;
+    
 }
 #cell_8 {
-    background-image: url("../img/baner/kids.jpg");
+    
 }
 #cell_9 {
-    background-image: url("../img/baner/happykids.jpg");
+    
 }

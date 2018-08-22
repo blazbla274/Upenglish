@@ -842,10 +842,16 @@ h2 {
     color: rgba(214, 210, 210, 0.87);
 }
 
-.price_list_box > div > span > span {
+span.discount {
     color: rgba(6, 233, 6, 0.822);
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
+}
+
+span.weakly {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .price_list_box > div > span:last-child {

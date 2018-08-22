@@ -928,6 +928,7 @@ span.weakly {
     height: 50px;
     cursor: pointer;
     transform: rotate(0deg);
+    z-index: 2;
 }
 
 .cross::before, .cross::after {
@@ -1090,23 +1091,11 @@ span.weakly {
 }
 @media all and (max-width: 1387px) {
     .img_big_box > .next {
-        right: 0.2vw;
+        right: 0.5vw;
     }
     
     .img_big_box > .previous {
-        left: 0.2vw;
-    }
-}
-
-@media all and (max-width: 1387px) {
-    .img_big_box > .next {
-        bottom: 4%;
-        right: 10vw;
-    }
-    
-    .img_big_box > .previous {
-        bottom: 4%;
-        left: 10vw;
+        left: 0.5vw;
     }
 }
 

@@ -853,7 +853,7 @@ h2 {
     cursor: pointer;
 }
 
-.price_list_box > div {
+.price_list_box.children > div {
     border-top: 1px solid rgba(240, 240, 240, 0.842);
 }
 
@@ -864,29 +864,32 @@ h2 {
     background-color: rgb(41, 98, 166); 
 }
 
-.price_list_box > div:first-child > span {
+.price_list_box.children > div:first-child > span {
     background-color: rgba(59, 117, 189, 0.788); 
 }
 
-.price_list_box > div:last-child {
+.price_list_box.children > div:last-child {
     position: absolute;
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     background-color: rgb(41, 98, 166); 
+}
+
+.price_list_box > div:last-child {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.price_list_box > div:last-child > h2 {
+.price_list_box.children > div:last-child > h2 {
     padding: 10px 0px;
 }
 
-.price_list_box > div:first-child > h2 {
+.price_list_box.children > div:first-child > h2 {
     border-bottom: 1px solid rgba(128, 128, 128, 0.329);
 }
-.price_list_box > div:last-child > span:last-child {
+.price_list_box.children > div:last-child > span:last-child {
     padding-bottom: 15px;
     padding-top: 0px;
 }
@@ -900,7 +903,7 @@ h2 {
     color: #e2e2e2e3;
 }
 
-.price_list_box > div > span {
+.price_list_box.children > div > span {
     display: block;
     padding: 7px;
     color: rgba(214, 210, 210, 0.87);
@@ -918,16 +921,41 @@ span.weakly {
     color: white;
 }
 
-.price_list_box > div > span:last-child {
+.price_list_box.children > div > span:last-child {
     display: block;
     padding-top: 3px;
     padding-bottom: 30px;
 }
 
-.price_list_box > div:first-child > .price_description {
+.price_list_box.children > div:first-child > .price_description {
     font-size: 14px;
     padding-bottom: 10px;
 }
+
+.price_list_box.adults {
+    border: 1px solid rgba(90, 85, 85, 0.63);
+}
+
+.price_list_box.adults > div:first-child {
+    background-color: #ffd522;  
+    border-bottom: 1px solid rgba(90, 85, 85, 1);
+}
+
+.price_list_box.adults > div:first-child > h2 {
+    color: #2d2c2ce3;
+}
+
+.price_list_box.adults > div:nth-child(2) {
+    padding: 40px 5px;
+}
+
+.price_list_box.adults > div:nth-child(2) > span,
+.price_list_box.adults > div:nth-child(3) > span {
+    display: block;
+    padding: 7px 0px;
+    color: rgba(245, 241, 241, 0.911);
+}
+
 
 /*Gallery*/
 .gallery {

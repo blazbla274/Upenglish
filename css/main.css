@@ -320,31 +320,15 @@ nav > div > .join {
 }
 
 .main_slider > span {
-    background: rgba(255, 102, 0, 0.747);
-    bottom: 200px;
-    font-size: 22px;
+    z-index: 5;
+    bottom: 120px;
+    font-size: 36px;
     padding: 12px 34px;
     text-align: center;
-    color: rgba(248, 245, 245, 0.89);
+    color: rgb(255, 255, 255);
     font-family: 'Muli', sans-serif;
-    border: 1px solid rgba(128, 128, 128, 0.315);
-}
-
-#know_more {
-    bottom: 140px;
-}
-
-#know_more::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 0.8;
-    left: 50%;
-    top: 110%;
-    transform: translateX(-50%);
-    background-image: url("../img/arrow.png");
-    background-size: cover;
+    text-shadow: 0px 0px 24px rgba(2, 22, 19, 0.64);
+    width: 80%;
 }
 
 .main_slider > span > h2 {
@@ -373,7 +357,7 @@ nav > div > .join {
     text-align: center;
     background: rgb(20, 153, 234);
     border-radius: 3px;
-    bottom: 25px;
+    bottom: 40px;
     border: 1px solid rgba(83, 83, 83, 0.619);
     cursor: pointer;
     padding: 10px 40px;
@@ -454,7 +438,7 @@ nav > div > .join {
     background-repeat: no-repeat;
 }
 
-.scene_resizing {
+.scene_resizing, .slider_filter {
     top: 0px;
     left: 0px;
     width: 100%;
@@ -466,6 +450,17 @@ nav > div > .join {
     transition: all 150ms ease;
     color: white;
     font-size: 22px;
+}
+
+.slider_filter {
+    background-color: rgb(27, 27, 27);
+    opacity: 0.3;
+    transition: all 2s ease;
+}
+
+.slider_filter:hover {
+
+    opacity: 0.05;
 }
 
 .scene_resizing > span, .scene_resizing > img {

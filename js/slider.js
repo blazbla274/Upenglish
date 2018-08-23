@@ -9,6 +9,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
       resizing = true;
+      $('.scene_resizing').css('z-index', '19');
       $('.scene_resizing').css('opacity', '1');
       sliderResize();
     });
@@ -52,6 +53,7 @@ async function initCarousel() {
 async function resizeOffDelay(x) {
     await sleep(x);
     $('.scene_resizing').css("opacity", "0");
+    $('.scene_resizing').css('z-index', '19');
 } 
 
 function sleep(ms) {

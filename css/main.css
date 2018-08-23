@@ -320,15 +320,31 @@ nav > div > .join {
 }
 
 .main_slider > span {
-    width: 450px;
     background: rgba(255, 102, 0, 0.747);
     bottom: 200px;
     font-size: 22px;
-    padding: 20px 34px;
+    padding: 12px 34px;
     text-align: center;
     color: rgba(248, 245, 245, 0.89);
     font-family: 'Muli', sans-serif;
     border: 1px solid rgba(128, 128, 128, 0.315);
+}
+
+#know_more {
+    bottom: 140px;
+}
+
+#know_more::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    background-image: url("../img/arrow.png");
+    background-size: cover;
 }
 
 .main_slider > span > h2 {
@@ -357,7 +373,7 @@ nav > div > .join {
     text-align: center;
     background: rgb(20, 153, 234);
     border-radius: 3px;
-    bottom: 65px;
+    bottom: 25px;
     border: 1px solid rgba(83, 83, 83, 0.619);
     cursor: pointer;
     padding: 10px 40px;

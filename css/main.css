@@ -1232,6 +1232,9 @@ footer > div {
     -webkit-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
     box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
+    position: relative;
+    transform: translateY(-100%);
+    height: 0px;
 }
 
 footer > div > div {
@@ -1240,16 +1243,27 @@ footer > div > div {
     float: left;
     min-width: 300px;
     background: rgba(249, 113, 22, 0.84);
+    z-index: 2;
+    opacity: 0.98;
+}
+
+footer > div > .date, footer > div > .form {
+    position: absolute;
+    border-bottom: 2px solid rgb(208, 86, 14);
+}
+
+footer > div > .form {
+    right: 0px;
 }
 
 #map {
     width: 100%;
-    height: 400px;
+    height: 95vh;
     background-color: grey;
     -webkit-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
-    border-top: 2px solid rgb(208, 86, 14);
+    z-index: 1;
 }
 
 #map::after {
@@ -1263,8 +1277,6 @@ form {
 
 .form {
     border-left: 2px solid rgb(208, 86, 14);
-    box-sizing: border-box;
-
 }
 
 form > label {
@@ -1296,7 +1308,7 @@ input[type="email"], textarea {
 }
 
 input[type="email"]:focus, textarea:focus {
-    background: rgba(255, 255, 255, 0.815);
+    background: rgb(253, 214, 191);
 }
 
 @media all and (max-width: 1200px) {
@@ -1376,6 +1388,12 @@ textarea {
     }
     #dane_osobowe_check::after {
         width: 40vw;
+    }
+    .date > div:first-child {
+        margin-top: 0px;
+    }
+    footer > div > .date, footer > div > .form {
+        position: relative;
     }
 }
 

@@ -223,10 +223,14 @@ function initMap() {
     var location = {lat: 50.216341, lng: 19.157471};
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
-        center: location,
+        center: {lat: 50.266341, lng: 19.157471},
         mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'night_map']
         },
+        mapTypeControlOptions: {
+          style: google.maps.MapTypeControlStyle.VERTICAL_BAR,
+          position: google.maps.ControlPosition.BOTTOM_CENTER
+        }
     });
     var marker = new google.maps.Marker({
         position: location,

@@ -352,7 +352,7 @@ nav > div > .join {
     }
 }
 
-.main_slider > .join {
+input[type="submit"], .main_slider > .join {
     font-size: 20px;
     text-align: center;
     background: rgb(20, 153, 234);
@@ -1227,7 +1227,7 @@ img {
 
 /*Footer*/
 footer > div {
-    border-top: 2px solid rgb(39, 38, 38);
+    border-top: 2px solid rgb(208, 86, 14);
     color: white;
     -webkit-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 13px 92px 8px rgba(0,0,0,0.55);
@@ -1239,7 +1239,7 @@ footer > div > div {
     height: 502px;
     float: left;
     min-width: 300px;
-    background: rgba(36, 47, 62, 0.96);
+    background: rgba(249, 113, 22, 0.84);
 }
 
 #map {
@@ -1249,6 +1249,7 @@ footer > div > div {
     -webkit-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
     box-shadow: 0px 13px 92px -1px rgba(0,0,0,0.2);
+    border-top: 2px solid rgb(208, 86, 14);
 }
 
 #map::after {
@@ -1261,7 +1262,7 @@ form {
 }
 
 .form {
-    border-left: 2px solid rgb(56, 65, 78);
+    border-left: 2px solid rgb(208, 86, 14);
     box-sizing: border-box;
 
 }
@@ -1277,22 +1278,31 @@ form > input {
 #submit {
     display: block;
     margin: 20px 0px;
-    width: 100px;
     height: 35px;
     border-radius: 3px;
     font-size: 18px;
-    border: 1px solid black;
+    line-height: 15px;
     cursor: pointer;
     float: left;
-    background: rgba(107, 177, 3, 0.815)
 }
 
 input[type="email"], textarea {
     padding: 12px;
     border-radius: 4px;
-    border: 1px solid rgb(39, 38, 38);
+    border: 1px solid rgb(208, 86, 14);
     font-size: 16px;
-    width: 280px;
+    width: 480px;
+    transition: all 200ms ease;
+}
+
+input[type="email"]:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.815);
+}
+
+@media all and (max-width: 1200px) {
+    input[type="email"], textarea {
+        width: 85%;
+    }
 }
 
 textarea {

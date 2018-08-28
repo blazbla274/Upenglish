@@ -678,6 +678,10 @@ h2 {
     padding-bottom: 50px;
 }
 
+.bottom_offer_container {
+    background: rgb(49, 49, 49);
+}
+
 .bottom_offer {
     padding: 80px 0px;
 }

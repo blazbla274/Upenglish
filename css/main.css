@@ -621,12 +621,15 @@ input[type="submit"], .main_slider > .join {
     position: absolute;
     transition: all 200ms ease;
     width: 100%;
+    z-index: 5;
 }
 
 .lector_box > h2 {
     font-size: 28px;
     padding: 0px;
-    top: 264px;
+    top: 269px;
+    text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.65);
+    color: white;
 }
 
 .lector_box.lector2 > h2 {
@@ -634,9 +637,10 @@ input[type="submit"], .main_slider > .join {
 }
 
 .lector_box > h3 {
-    top: 280px;
+    top: 285px;
     left: 0px;
     font-size: 16px;
+    color: rgb(243, 240, 240);
 }
 
 .lector_box:hover > h2, .lector_box:hover > h3 {
@@ -652,6 +656,8 @@ input[type="submit"], .main_slider > .join {
     height: 150px;
     transition: all 400ms ease;
     font-size: 14px;
+    font-weight: 500;
+    color: #d7e9fd;
 }
 
 .lector_box::before {
@@ -665,10 +671,24 @@ input[type="submit"], .main_slider > .join {
     opacity: 0;
     background: rgb(32, 92, 163);
     transition: all 300ms ease;
+    z-index: 4;
+}
+
+.lector_box::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    -webkit-box-shadow: 0px 1px 156px 51px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 1px 156px 51px rgba(0,0,0,0.8);
+    box-shadow: 0px 1px 156px 51px rgba(0,0,0,0.8);
 }
 
 .lector_box:hover::before {
-    opacity: 0.4;
+    opacity: 0.9;
 }
 
 .lector_box:hover > div {

@@ -1,8 +1,25 @@
 /*Lectors*/
 .lector_box.lector1 {
-     background-image: url(../img/lectors/lector1.jpg);
+     background-image: url(../img/lectors/lektor-Paulina.jpg);
 }
-
+.lector_box.lector2 {
+    background-image: url(../img/lectors/lektor-Mateusz.jpg);
+}
+.lector_box.lector3 {
+    background-image: url(../img/lectors/lektor-Asia.jpg);
+}
+.lector_box.lector4 {
+    background-image: url(../img/lectors/lektor-Ewa.jpg);
+}
+.lector_box.lector5 {
+    background-image: url(../img/lectors/lektor-Beata.jpg);
+}
+.lector_box.lector6 {
+    background-image: url(../img/lectors/lektor-Kasia.jpg);
+}
+.lector_box.lector7 {
+    background-image: url(../img/lectors/lektor-Radosław.jpg);
+}
 /*Gallery*/
 #img1 {
     background-image: url(../img/gallery/miniImg/img1.jpg);
@@ -101,4 +118,59 @@ background-position: 50% 0%;
 }
 #cell_9 {
     background-image: url("../img/baner/happykids.jpg");
+}
+
+/*Offer*/
+#offer_5_i_6 {
+    background-image: url("../img/offer/offer-5_6.jpg");
+}
+#offer_1_-_3 {
+    background-image: url("../img/offer/offer-kl13.jpg");
+}
+#offer_4_-_6 {
+    background-image: url("../img/offer/offer-kl46.jpg");
+}
+#offer_7_-_8 {
+    background-image: url("../img/offer/offer-kl78.jpg");
+}
+#offer_matura {
+    background-image: url("../img/offer/offer-matura.jpg");
+}
+#offer_dorosli {
+    background-image: url("../img/offer/offer-dorosli.jpg");
+}
+#offer_dla_firm {
+    background-image: url("../img/offer/offer-firmy.jpg");
+}
+#offer_konwersacje {
+    background-image: url("../img/offer/offer-konwersacje.jpg");
+}
+#offer_polkolonie {
+    background-image: url("../img/offer/offer-polkolonie.jpg");
+}
+#offer_warsztaty_k {
+    background-image: url("../img/offer/offer-warsztaty_kr.jpg");
+}
+
+/*howe we learning*/
+#role_playing {
+    background-image: url("../img/how_we_learning/roleplaying.jpg");
+}
+#gamification {
+    background-image: url("../img/how_we_learning/gamifikacja.jpg");
+}
+#muzyka_rytm {
+    background-image: url("../img/how_we_learning/muzyka_i_rytm.jpg");
+}
+#multimedia {
+    background-image: url("../img/how_we_learning/multimedia.jpg");
+}
+#metoda_bezpośrednia {
+    background-image: url("../img/how_we_learning/metoda_bezposrednia.jpg");
+}
+#blended_learning {
+    background-image: url("../img/how_we_learning/blended_learning.jpg");
+}
+#storytelling {
+    background-image: url("../img/how_we_learning/storyteling.jpg");
 }

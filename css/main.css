@@ -1364,7 +1364,6 @@ form > input {
     font-size: 18px;
     line-height: 15px;
     cursor: pointer;
-    float: left;
 }
 
 input[type="email"], textarea {
@@ -1392,7 +1391,6 @@ textarea {
 }
 
 #dane_osobowe_check {
-    float: left;
     display: block;
     margin-top: 17px;
     margin-left: 20px;
@@ -1403,13 +1401,21 @@ textarea {
 }
 
 #dane_osobowe_check::after {
-    content: "Wyrażam zgodę na przetwarzanie moich danych";
+    content: "Wyrażam zgodę na przetwarzanie moich danych osobowych przez firmę Up English Paulina Kosmala, ul. Korfantego 3/7, 41-400 Mysłowice, w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania i żądania zaprzestania ich przetwarzania.";
     position: relative;
     right: -24px;
     top: -40%;
-    width: 140px;
+    width: 360px;
     display: block;
     color: rgba(240, 235, 235, 0.938);
+    font-size: 12px;
+}
+
+@media all and (max-width: 980px) {
+    #dane_osobowe_check::after {
+        font-size: 11px;
+        width: 250px;
+    }
 }
 
 /*date*/
@@ -1469,6 +1475,13 @@ textarea {
     }
     footer > div > .date, footer > div > .form {
         position: relative;
+    }
+    #dane_osobowe_check::after {
+        font-size: 14px;
+        width: 60vw;
+    }
+    #dane_osobowe_check {
+        margin-bottom: 150px;
     }
 }
 
